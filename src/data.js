@@ -2,7 +2,7 @@ export const months = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', ],
     datasets: [
         {
-            label: 'Value',
+            label: 'Months',
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -31,11 +31,29 @@ export const monthsLine = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', ],
     datasets: [
         {
-            label: 'Value',
+            label: 'Months',
             borderColor: 'rgba(54, 162, 235, 1)',
             backgroundColor: 'rgba(0, 0, 0, 0)',
             borderWidth: 1,
+            hoverBackgroundColor: 'rgba(58,56,64,0.55)',
+            hoverBorderColor: 'rgb(0,0,0)',
             data: [65, 59, 80, 81, 56, 55],
+        }
+    ]
+}
+
+
+export const monthsLine_small = {
+    labels: ['January', 'February', 'March' ],
+    datasets: [
+        {
+            label: 'Months',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+            borderWidth: 1,
+            hoverBackgroundColor: 'rgba(58,56,64,0.55)',
+            hoverBorderColor: 'rgb(0,0,0)',
+            data: [2, 2, 2],
         }
     ]
 }
