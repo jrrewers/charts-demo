@@ -1,10 +1,10 @@
-import {months} from "../data";
 import React from "react";
-import {Bar} from "react-chartjs-2";
+import {months} from "../../data";
+import {Pie} from "react-chartjs-2";
 
-export const BarWrapper = () => (
-    <div className="bar">
-        <Bar
+export const ChartJSPieWrapper = () => (
+    <div className="pie">
+        <Pie
             data={months}
             options={{
                 layout: {

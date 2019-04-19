@@ -27,6 +27,15 @@ export const months = {
   ]
 };
 
+export const monthsHighchart = [
+    ["January", 65],
+  ["February", 59],
+  ["March", 80],
+  ["April", 81],
+  ["May", 56],
+  ["June", ]
+]
+
 export const monthsLine = {
   labels: ["January", "February", "March", "April", "May", "June"],
   datasets: [

@@ -1,8 +1,8 @@
-import {monthsLine} from "../data";
+import {monthsLine} from "../../data";
 import React from "react";
 import {Line} from "react-chartjs-2";
 
-export const LineWithoutAxisWrapper = () => (
+export const ChartJSLineWithoutAxisWrapper = () => (
     <div className="line">
         <Line
             data={monthsLine}
