@@ -3,40 +3,34 @@ import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import {months} from "../../data";
 
-
 const labelledData = months.labels.map(
-        (v, i) => ({
-            name: v,
-            y: months.datasets[0].data[i],
-            color: months.datasets[0].backgroundColor[i]
-        })
-    )
-
+    (v, i) => ({
+        name: v,
+        y: months.datasets[0].data[i]
+    })
+)
 
 const options = {
     chart: {
-        type: 'pie'
+        type: 'spline'
     },
     title: {
-        text: 'Pie Chart'
+        text: 'Line'
     },
     xAxis: {
         title: {
             text: 'Months'
-        },
-        categories: months.labels
+        }
     },
     series: [
         {
             name: 'Values over months',
-            data: labelledData,
-            color: months.datasets[0].backgroundColor
+            data: labelledData
         }
     ]
 };
 
-
-export const HighchartPieWrapper = () => (
+export const HighchartLineWrapper = () => (
     <div className="pie">
         <HighchartsReact
             highcharts={Highcharts}

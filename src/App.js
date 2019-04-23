@@ -7,6 +7,9 @@ import styled from 'styled-components';
 import {ChartJSLineWrapper} from "./components/ChartJS/ChartJSLineWrapper";
 import {ChartJSLineWithoutAxisWrapper} from "./components/ChartJS/ChartJSLineWithoutAxisWrapper";
 import {HighchartPieWrapper} from "./components/Highchart/HighchartPieWrapper";
+import {HighchartBarWrapper} from "./components/Highchart/HighchartBarWrapper";
+import {HighchartLineWrapper} from "./components/Highchart/HighchartLineWrapper";
+import {HighchartWithoutLineWrapper} from "./components/Highchart/HighchartJSLineWithoutAxisWrapper";
 
 const MenuItem = styled.div`
     display: inline-block;
@@ -34,7 +37,7 @@ const urls = {
         pie: "/highcharts/pie/",
         bar: "/highcharts/bar/",
         line: "/highcharts/line/",
-        lineNoAxis: "/highcharts/line-wo-axix/"
+        lineNoAxis: "/highcharts/line-wo-axis/"
     }
 }
 
@@ -64,6 +67,9 @@ class App extends Component {
              <Route path={urls.chartjs.lineNoAxis} component={ChartJSLineWithoutAxisWrapper}/>
 
              <Route path={urls.highcharts.pie} component={HighchartPieWrapper}/>
+             <Route path={urls.highcharts.bar} component={HighchartBarWrapper}/>
+             <Route path={urls.highcharts.line} component={HighchartLineWrapper}/>
+             <Route path={urls.highcharts.lineNoAxis} component={HighchartWithoutLineWrapper}/>
 
 
          </Wrapper>
