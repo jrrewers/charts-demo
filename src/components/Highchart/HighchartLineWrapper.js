@@ -1,7 +1,14 @@
 import React from "react";
 import Highcharts from 'highcharts';
+import accessibility from 'highcharts/modules/accessibility';
+import exporting from 'highcharts/modules/exporting';
+import exportData from 'highcharts/modules/export-data';
 import HighchartsReact from 'highcharts-react-official';
 import {months} from "../../data";
+
+accessibility(Highcharts)
+exporting(Highcharts)
+exportData(Highcharts)
 
 const labelledData = months.labels.map(
     (v, i) => ({
